@@ -1,6 +1,5 @@
 #include "header.hpp"
 #include "food.hpp"
-#include "locker.hpp"
 
 
 void tsystem::customer_choice(){
@@ -13,11 +12,12 @@ void tsystem::customer_choice(){
     cin >> choice;
     switch(choice){
         case 1:
+            tsystem::ticket();
             break;
         case 2:
-            rentlocker();
+            tsystem::rentlocker();
             break;
-        case 3:
+        case 3:{
             loadFoodData(foodList);
             cout << "Food Menu: \n" << string(90, '-') << endl;
             displayFood(foodList, ITEMS);
@@ -31,6 +31,7 @@ void tsystem::customer_choice(){
             }
             cout << "Total Price: RM " << fixed << setprecision(2) << totalPrice << endl;
             break;
+        }
         case 4:
             break;
         case 5:

@@ -27,6 +27,13 @@ class tsystem {
 
         void customer_choice();
 
+        void ticket();
+        int ticket1;    // Adult Ticket
+        int ticket2;    // Children Ticket   
+        int ticket3;    // Senior Citizen Ticket
+
+        void rentlocker();
+
     private:
         int x;
 };

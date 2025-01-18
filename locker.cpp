@@ -1,11 +1,11 @@
 #include <iostream>
 #include <iomanip>
-#include "locker.hpp"
+#include "header.hpp"
 
 using namespace std;
 
 //To getting information of locker by customer//
-void rentlocker(){
+void tsystem::rentlocker(){
     char choice;
     const double pricePerLocker = 10.0; 
     int numberOfLockers;
