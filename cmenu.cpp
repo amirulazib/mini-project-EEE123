@@ -2,7 +2,6 @@
 
 
 void tsystem::display_cmenu(){
-    
     cout << endl;
     cout << "---------------------------------------" << endl;
     cout << "||           Customer Menu           ||" << endl;
