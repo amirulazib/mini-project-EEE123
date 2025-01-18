@@ -27,12 +27,13 @@ void tsystem::rentlocker(){
     cout << "Total Price: RM" << totallockerPrice << endl;
     cout << "-----------------------" << endl;
     cout << "Locker rental details saved successfully!" << endl;
-    cout << "\nDo you want to rent lockers again? (y/n): ";
+    cout << "\nDo you want to change number of lockers? (y/n): ";
     cin >> choice;}
 
     } while (choice == 'y' || choice == 'Y');
     
     cout << "Thank you for using our locker rental service!" << endl;
 
+    tsystem::locker = numberOfLockers;
 }
 

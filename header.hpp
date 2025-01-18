@@ -32,7 +32,8 @@ class tsystem {
         int ticket2;    // Children Ticket   
         int ticket3;    // Senior Citizen Ticket
 
-        void rentlocker();
+        void rentlocker(); 
+        int locker;
 
     private:
         int x;

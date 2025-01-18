@@ -62,12 +62,12 @@ void tsystem::ticket(){
         while (true){
         cout << "\n__________________________________________________" << endl;
         string choice;
-        cout << "Do you wish to purchase more tickets? (yes/no): ";
+        cout << "Do you wish to purchase more tickets? (Y/N): ";
         cin >> choice;
 
-        if (choice == "yes") {
+        if (choice == "Y" || choice == "y" ) {
         break;
-        } else if (choice == "no") {
+        } else if (choice == "N" || choice == "n") {
         int price = 0;
         price += 20 * (adult_count) + 10 * (children_count) + 15 * (senior_count);
         cout << "The price is RM " << price << endl;
