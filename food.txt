@@ -1,0 +1,90 @@
+M1
+Nasi Lemak
+5.50
+M2
+Roti Canai
+2.00
+M3
+Mee Goreng
+4.50
+M4
+Ayam Goreng
+6.00
+M5
+Laksa
+7.00
+M6
+Sate
+8.00
+M7
+Nasi Ayam
+5.75
+M8
+Nasi Kerabu
+6.50
+M9
+Ikan Bakar
+10.00
+M10
+Lempeng
+3.50
+C1
+Char Kway Teow
+8.50
+C2
+Hainanese Chicken Rice
+7.50
+C3
+Dim Sum
+12.00
+C4
+Wonton Noodles
+6.75
+C5
+Sweet and Sour Chicken
+10.25
+C6
+Spring Rolls
+5.00
+C7
+Mapo Tofu
+9.50
+C8
+Kung Pao Chicken
+11.00
+C9
+Egg Fried Rice
+5.50
+C10
+Chow Mein
+7.75
+I1
+Chicken Tandoori
+9.00
+I2
+Biryani
+8.00
+I3
+Paneer Butter Masala
+7.50
+I4
+Masala Dosa
+4.25
+I5
+Fish Curry
+10.50
+I6
+Lamb Vindaloo
+12.00
+I7
+Dal Tadka
+6.00
+I8
+Aloo Paratha
+5.00
+I9
+Gulab Jamun
+3.50
+I10
+Mango Lassi
+4.00
