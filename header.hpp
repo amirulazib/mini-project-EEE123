@@ -9,6 +9,8 @@
 
 using namespace std;
 
+const int ITEMS = 30;
+
 class tsystem {
     public:
         void display_mmenu();
@@ -35,6 +37,24 @@ class tsystem {
         void rentlocker(); 
         int locker;
 
+        struct FoodItem {
+        string code;
+        string name;
+        double price;
+        };
+
+        struct Order {
+            string code;
+            string name;
+            double price;
+            int quantity;
+        };
+
+        void loadFoodData(FoodItem foodList[]);
+        void displayFood(const FoodItem foodList[], int count);
+        void getOrder(const FoodItem foodList[], int count, Order orderList[], int& orderCount, double& totalPrice);
+        
     private:
         int x;
 };
+

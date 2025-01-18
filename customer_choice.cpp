@@ -1,6 +1,4 @@
 #include "header.hpp"
-#include "food.hpp"
-
 
 void tsystem::customer_choice(){
     FoodItem foodList[ITEMS];  // Array to hold food items

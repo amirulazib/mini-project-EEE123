@@ -1,4 +1,4 @@
-#include "food.hpp"
+#include "header.hpp"
 #include <iostream>
 #include <fstream>
 #include <iomanip>
@@ -6,7 +6,7 @@
 using namespace std;
 
 // Load food data into the array
-void loadFoodData(FoodItem foodList[]) {
+void tsystem::loadFoodData(FoodItem foodList[]) {
     ifstream file("food.txt");
     if (file.fail()) {
         cout << "Error: Could not open food.txt" << endl;
@@ -24,7 +24,7 @@ void loadFoodData(FoodItem foodList[]) {
 }
 
 // Display food menu
-void displayFood(const FoodItem foodList[], int count) {
+void tsystem::displayFood(const FoodItem foodList[], int count) {
     cout << left << setw(5) << "No" << setw(20) << "Code" << setw(50) << "Food" << setw(30) << "Price (RM)" << endl;
 
     for (int i = 0; i < count; i++) {
@@ -34,7 +34,7 @@ void displayFood(const FoodItem foodList[], int count) {
 }
 
 // Get user orders
-void getOrder(const FoodItem foodList[], int count, Order orderList[], int& orderCount, double& totalPrice) {
+void tsystem::getOrder(const FoodItem foodList[], int count, Order orderList[], int& orderCount, double& totalPrice) {
     string code;
     int quantity;
     bool state;
