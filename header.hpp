@@ -11,6 +11,8 @@ using namespace std;
 
 const int ITEMS = 30;
 
+
+
 class tsystem {
     public:
         void display_mmenu();
@@ -50,10 +52,19 @@ class tsystem {
             int quantity;
         };
 
+        FoodItem foodList[ITEMS];  // Array to hold food items
+        Order orderList[ITEMS];    // Array to hold user orders
+        int orderCount;
+        double totalPrice;
+
         void loadFoodData(FoodItem foodList[]);
+
         void displayFood(const FoodItem foodList[], int count);
+
         void getOrder(const FoodItem foodList[], int count, Order orderList[], int& orderCount, double& totalPrice);
-        
+
+        void checkpurchases();
+
     private:
         int x;
 };
