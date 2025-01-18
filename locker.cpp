@@ -35,5 +35,23 @@ void tsystem::rentlocker(){
     cout << "Thank you for using our locker rental service!" << endl;
 
     tsystem::locker = numberOfLockers;
+
+    string data;
+    ifstream infile(username + "_data.txt");
+    if (infile) {
+        string line;
+        while (getline(infile, line)) {
+            if (line.find("locker:") == 0) {
+                continue; // Skip the locker line
+            }
+            data += line + "\n"; // Keep other data
+        }
+        infile.close();
+    }
+
+    ofstream outfile(tsystem::username + "_data.txt");
+    outfile << "locker:" << locker << "\n";
+    outfile << data;
+    outfile.close();
 }
 

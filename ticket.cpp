@@ -38,26 +38,42 @@ void tsystem::ticket(){
         switch (tic_choice) {
             case 1:
                 cout << "Adult." << endl;
-                for(int i = 0; i < numTickets; i++){
-                adult_count++;
-                }
+                adult_count = numTickets;
                 break;
             case 2:
                 cout << "Children." << endl;
-                for(int i = 0; i < numTickets; i++){
-                children_count++;
-                }
+                children_count = numTickets;
                 break;
             case 3:
                 cout << "Senior." << endl;
-                for(int i = 0; i < numTickets; i++){
-                senior_count++;
-                }
+                senior_count = numTickets;
                 break;
             }
             break;
             }
         }
+        
+        tsystem::ticket1 = adult_count;
+        tsystem::ticket2 = children_count;
+        tsystem::ticket3 = senior_count;
+
+        string data;
+        ifstream infile(username + "_data.txt");
+        if (infile) {
+            string line;
+            while (getline(infile, line)) {
+                if (line.find("tickets:") == 0) {
+                    continue; // Skip the tickets line
+                }
+                data += line + "\n"; // Keep other data
+            }
+            infile.close();
+        }
+
+        ofstream outfile(tsystem::username + "_data.txt");
+        outfile << "tickets:" << ticket1 << "," << ticket2 << "," << ticket3 << "\n";
+        outfile << data;
+        outfile.close();
 
         while (true){
         cout << "\n__________________________________________________" << endl;
@@ -77,8 +93,5 @@ void tsystem::ticket(){
         cout << "Invalid input. Please try again." << endl;
         }
     }
-    tsystem::ticket1 = adult_count;
-    tsystem::ticket2 = children_count;
-    tsystem::ticket3 = senior_count;
-}
+    }
 }

@@ -1,7 +1,4 @@
-
 #include "header.hpp"
-
-using namespace std;
 
 int main(){
 
@@ -22,8 +19,11 @@ int main(){
         else if (choice == "2"){
             sys.login();
             if (sys.status == 1){
+                while(sys.cmenu == 1){
                 sys.display_cmenu();
                 sys.customer_choice();
+                }
+                sys.cmenu = 1   ;
             }
         }
         else if (choice == "3"){

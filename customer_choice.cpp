@@ -18,6 +18,7 @@ void tsystem::customer_choice(){
 
             tsystem::getOrder(foodList, ITEMS, orderList, orderCount, totalPrice);
 
+            tsystem:savedata(orderCount,orderList);
             break;
         }
         case 4:
@@ -27,6 +28,7 @@ void tsystem::customer_choice(){
             break;
         case 6:
             cout << "Logout successful!" << endl;
+            tsystem::cmenu = 0;
             break;
     }
     system("pause");

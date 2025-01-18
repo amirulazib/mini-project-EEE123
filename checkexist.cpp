@@ -14,5 +14,4 @@ void tsystem::checkexist(string name,string pass){
             break;
         }
     }
-
 }

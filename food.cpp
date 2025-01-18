@@ -1,7 +1,4 @@
 #include "header.hpp"
-#include <iostream>
-#include <fstream>
-#include <iomanip>
 
 using namespace std;
 
@@ -101,4 +98,13 @@ void tsystem::getOrder(const FoodItem foodList[], int count, Order orderList[], 
             cout << "Invalid code. Please try again.\n";
         }
     }
+}
+
+void tsystem::savedata(int& orderCount, Order orderList[]){
+    ofstream outfile(tsystem::username + "_data.txt", ios::app);
+    for (int i = 0; i < orderCount; i++) {
+        outfile << "order:" << orderList[i].quantity << "," << orderList[i].name << "," << fixed << setprecision(2) << orderList[i].price
+        << "," << orderList[i].quantity * orderList[i].price << endl;
+    }
+    outfile.close();
 }

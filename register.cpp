@@ -28,6 +28,12 @@ void tsystem::regis(){
                 tsystem::exist = 0;
             }
             else if (tsystem::exist == 0){
+                ofstream outfile(name + "_data.txt");
+                outfile << "username:" << name << endl;
+                outfile << "tickets:0,0,0\n";  // Default ticket data
+                outfile << "locker:0\n";
+                outfile << "orders:\n";        // Default order data
+                outfile.close();
                 cout << "Success! Your account has been created!" << endl;
                 break;
             }

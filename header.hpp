@@ -20,7 +20,8 @@ class tsystem {
         void regis();
 
         void login();
-        int status;
+        int status, cmenu = 1;
+        string username;
 
         void del();
 
@@ -62,6 +63,8 @@ class tsystem {
         void displayFood(const FoodItem foodList[], int count);
 
         void getOrder(const FoodItem foodList[], int count, Order orderList[], int& orderCount, double& totalPrice);
+
+        void savedata(int& orderCount, Order orderList[]);
 
         void checkpurchases();
 

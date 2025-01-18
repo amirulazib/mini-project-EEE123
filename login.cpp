@@ -24,8 +24,24 @@ void tsystem::login(){
                 if (name == rname && pass == rpass) {
                     cout << "Logged in." << endl;
                     login = true;
+                    tsystem::username = name;
                     tsystem::status = 1;
+
+                    ifstream infile(username + "_data.txt");
+                    string line;
+                    while (getline(infile, line)) {
+                    // Parse and load user-specific data into program
+                    if (line.find("tickets:") == 0) {
+                        string tickets = line.substr(8); // Extract ticket data
+                        sscanf(tickets.c_str(), "%d,%d,%d", &ticket1, &ticket2, &ticket3);
+                    }
+                    if (line.find("locker:") == 0) {
+                        locker = stoi(line.substr(7)); // Extract locker data
+                    }
+                    infile.close();
+
                     break;
+                    }
                 }
             }
             if (!login) {
@@ -38,7 +54,5 @@ void tsystem::login(){
             }
         }    
     }
-
-    system("pause");
-
+    input.close();
 }
