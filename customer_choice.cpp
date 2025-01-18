@@ -1,5 +1,7 @@
 #include "header.hpp"
 #include "food.hpp"
+#include "locker.hpp"
+
 
 void tsystem::customer_choice(){
     FoodItem foodList[ITEMS];  // Array to hold food items
@@ -13,6 +15,7 @@ void tsystem::customer_choice(){
         case 1:
             break;
         case 2:
+            rentlocker();
             break;
         case 3:
             loadFoodData(foodList);
