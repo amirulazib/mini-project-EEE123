@@ -17,6 +17,9 @@ class tsystem {
     public:
         void display_mmenu();
 
+        void mainmenu_choice();
+        int exit = 0;
+
         void regis();
 
         void login();
@@ -68,7 +71,5 @@ class tsystem {
 
         void checkpurchases();
 
-    private:
-        int x;
 };
 

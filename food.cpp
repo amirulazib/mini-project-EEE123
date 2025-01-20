@@ -104,7 +104,7 @@ void tsystem::savedata(int& orderCount, Order orderList[]){
     ofstream outfile(tsystem::username + "_data.txt", ios::app);
     for (int i = 0; i < orderCount; i++) {
         outfile << "order:" << orderList[i].quantity << "," << orderList[i].name << "," << fixed << setprecision(2) << orderList[i].price
-        << "," << orderList[i].quantity * orderList[i].price << endl;
+        << endl;
     }
     outfile.close();
 }

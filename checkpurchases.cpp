@@ -26,7 +26,7 @@ void tsystem::checkpurchases(){
             if (senior_ticket > 0){
                 cout << "  Senior: " << senior_ticket << "\n";
             }
-            if (adult_ticket == 0, children_ticket == 0, senior_ticket == 0){
+            if (adult_ticket == 0 && children_ticket == 0 && senior_ticket == 0){
                 cout << "  None" << endl;
             }
         }
@@ -47,22 +47,19 @@ void tsystem::checkpurchases(){
         else if (line.find("order:") == 0) {
             string order = line.substr(6); // Extract order data
             stringstream ss(order);
-            string quantity_str, food_name, price_str, totalprice_str;
+            string quantity_str, food_name, price_str;
         
             getline(ss, quantity_str, ',');
             getline(ss, food_name, ',');
             getline(ss, price_str, ',');
-            getline(ss, totalprice_str, ',');
 
             double price = stod(price_str);
-            double totalprice = stod(totalprice_str);
             int quantity = stoi(quantity_str);
 
             cout << "Food Order:\n";
             cout << "  Name: " << food_name << "\n";
             cout << "  Price: RM " << price << "\n";
             cout << "  Quantity: " << quantity << "\n";
-            cout << "  Price: RM " << totalPrice << "\n";
             
         }
     }
