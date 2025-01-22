@@ -1,3 +1,7 @@
+// Coder        : 
+// Matrix no.   : 
+// Function     : 
+
 #include "header.hpp"
 
 // Used Chatgpt for this cuz its complicated :)
@@ -58,5 +62,4 @@ void tsystem::del() {
             cout << "Account does not exists. Please try again." << endl;
         }
     }
-    system("pause");
 }

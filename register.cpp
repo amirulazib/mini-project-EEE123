@@ -1,3 +1,7 @@
+// Coder        : Sew Heng Hou
+// Matrix no.   : 23302118
+// Function     : To register user's username and password into the system
+
 #include "header.hpp"
 
 
@@ -45,5 +49,4 @@ void tsystem::regis(){
 
     output << name << " " << pass << endl;
     output.close();
-    system ("pause");
 }

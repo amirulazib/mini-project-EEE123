@@ -1,8 +1,11 @@
+// Coder        : Sew Heng Hou
+// Matrix no.   : 23302118
+// Function     : Choice menu for customers before they are logged in
+
 #include "header.hpp"
 
 void tsystem::mainmenu_choice(){
     string choice;
-    int exit = 0;
     tsystem sys;
 
     cout << "Select an option > ";

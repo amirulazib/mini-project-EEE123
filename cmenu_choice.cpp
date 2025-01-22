@@ -1,3 +1,7 @@
+// Coder        : Sew Heng Hou
+// Matrix no.   : 23302118
+// Function     : Choice menu for customers after they are logged in
+
 #include "header.hpp"
 
 void tsystem::customer_choice(){
@@ -32,5 +36,4 @@ void tsystem::customer_choice(){
     else{
         cout << "Invalid, Please Try Again.\n" << endl;
     }
-    system("pause");
 }
