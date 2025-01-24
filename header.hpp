@@ -75,5 +75,6 @@ class tsystem {
 
         void checkpurchases();
 
+        void printreceipt();
 };
 

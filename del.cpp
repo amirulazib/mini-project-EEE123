@@ -61,5 +61,7 @@ void tsystem::del() {
         } else {
             cout << "Account does not exists. Please try again." << endl;
         }
+    }else{
+        cout << "Invalid, please try again" << endl;
     }
 }

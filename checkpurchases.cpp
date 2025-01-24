@@ -20,7 +20,7 @@ void tsystem::checkpurchases(){
             string tickets = line.substr(8);
             int adult_ticket, children_ticket, senior_ticket;
             sscanf(tickets.c_str(), "%d,%d,%d", &adult_ticket, &children_ticket, &senior_ticket);
-            cout << "Tickets Bought:\n";
+            cout << "\nTickets Bought:\n";
             if (adult_ticket > 0){
                 cout << "  Adult: " << adult_ticket << "\n";
             }
@@ -39,7 +39,7 @@ void tsystem::checkpurchases(){
             string lockers = line.substr(7);
             int locker_amount;
             sscanf(lockers.c_str(), "%d", &locker_amount);
-            cout << "Locker rented: ";
+            cout << "\nLocker rented: ";
             if (locker > 0){
                 cout << locker_amount << endl;
             }
@@ -60,7 +60,7 @@ void tsystem::checkpurchases(){
             double price = stod(price_str);
             int quantity = stoi(quantity_str);
 
-            cout << "Food Order:\n";
+            cout << "\nFood Order:\n";
             cout << "  Name: " << food_name << "\n";
             cout << "  Price: RM " << price << "\n";
             cout << "  Quantity: " << quantity << "\n";

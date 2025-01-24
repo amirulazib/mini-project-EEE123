@@ -53,6 +53,7 @@ void tsystem::login(){
                 cout << "Do you want to exit login? (Y/N) > ";
                 cin >> exit;
                 if(exit == "Y" || exit == "y"){
+                    cout << "Returning to main menu..." << endl;
                     login = 1;
                 }
             }

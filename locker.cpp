@@ -17,8 +17,8 @@ void tsystem::rentlocker(){
     cout << "Price per Locker: RM10.00";
     cout << "\nEnter the number of lockers you want to rent: ";
     cin >> numberOfLockers;
-    if (numberOfLockers <= 0) {
-    cerr << "Error: Number of lockers must be greater than 0!" << endl;
+    if (numberOfLockers < 0) {
+    cerr << "Error: Number of lockers must be a positive value!" << endl;
     }
     else {
     totallockerPrice = numberOfLockers * pricePerLocker;

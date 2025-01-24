@@ -21,7 +21,7 @@ void tsystem::customer_choice(){
 
             tsystem::getOrder(foodList, ITEMS, orderList, orderCount, totalPrice);
 
-            tsystem:savedata(orderCount,orderList);
+            tsystem::savedata(orderCount,orderList);
     }
     else if (choice == "4"){
             tsystem::checkpurchases();

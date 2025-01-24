@@ -7,6 +7,7 @@
 
 void tsystem::display_mmenu(){
     cout << endl;
+    cout << "--------WELCOME TO USM WATERPARK-------\n" << endl;
     cout << "---------------------------------------" << endl;
     cout << "||              Main Menu            ||" << endl;
     cout << "---------------------------------------" << endl;
