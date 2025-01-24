@@ -27,6 +27,7 @@ void tsystem::customer_choice(){
             tsystem::checkpurchases();
     }
     else if (choice == "5"){
+        tsystem::printreceipt();
 
     }
     else if (choice == "6"){

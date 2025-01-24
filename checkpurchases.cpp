@@ -69,4 +69,7 @@ void tsystem::checkpurchases(){
     }
 
     final.close();
+
+    cout << "\nPress any key to continue...";
+    getch();
 }

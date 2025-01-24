@@ -4,8 +4,8 @@
 //               2. SEW HENG HOU                        (23302118)
 //               3. CHEAH CHEE KANG                     (23302124)
 //               4. CHOONG JUN JIE                      (23302160)
-//               5. 
-//               6.
+//               5. NUR AMIRUL AZIB BIN NAZRI           (22306893)
+//               6. LIMUZI                              (23300188)
 //
 //Project Description: 
 //

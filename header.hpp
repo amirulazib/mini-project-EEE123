@@ -6,10 +6,12 @@
 
 #include <iostream>
 #include <fstream>
+#include <sstream>
 #include <string>
 #include <string.h>
 #include <vector>
 #include <iomanip>
+#include <conio.h>
 
 using namespace std;
 
@@ -74,6 +76,12 @@ class tsystem {
         void savedata(int& orderCount, Order orderList[]);
 
         void checkpurchases();
+
+        struct FoodOrder {
+            string food_name;
+            int quantity;
+            double price;
+        };
 
         void printreceipt();
 };
