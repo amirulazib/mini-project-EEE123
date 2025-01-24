@@ -1,6 +1,6 @@
-// Coder        : 
-// Matrix no.   : 
-// Function     : 
+// Coder        : Choong Jun Jie
+// Matrix no.   : 23302160
+// Function     : To allow users to book tickets for adults, children, and seniors and calculate the price.
 
 #include "header.hpp"
 
