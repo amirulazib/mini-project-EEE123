@@ -29,7 +29,7 @@ class tsystem {
         void regis();
 
         void login();
-        int status, cmenu = 1;
+        int cmenu;
         string username;
 
         void del();

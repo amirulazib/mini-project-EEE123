@@ -17,9 +17,9 @@
 //==============================================================================================================================================//
 
 
-// Coder        : 
-// Matrix no.   : 
-// Function     : 
+// Coder        : Sew Heng Hou
+// Matrix no.   : 23302118
+// Function     : Initiates main menu loop
 
 #include "header.hpp"
 

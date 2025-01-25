@@ -16,6 +16,7 @@ void tsystem::login(){
     else{
         while(login == 0){
 
+            // Input from user
             cout << "Enter username         > ";
             cin >> name;
             cout << "Enter Password         > ";
@@ -27,9 +28,9 @@ void tsystem::login(){
             while (input >> rname >> rpass) {
                 if (name == rname && pass == rpass) {
                     cout << "Logged in." << endl;
-                    login = true;
-                    tsystem::username = name;
-                    tsystem::status = 1;
+                    login = true; // Breaks Loop
+                    username = name; // Sets system's current user
+                    cmenu = 1; // Allows customer menu to be initiated
 
                     ifstream infile(username + "_data.txt");
                     string line;
@@ -48,6 +49,7 @@ void tsystem::login(){
                     }
                 }
             }
+            // Code to prevent soft locks by user.
             if (!login) {
                 cout << "Incorrect. Please try again." << endl;
                 cout << "Do you want to exit login? (Y/N) > ";

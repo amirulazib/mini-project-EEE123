@@ -12,24 +12,21 @@ void tsystem::mainmenu_choice(){
     cin >> choice;
 
     if (choice == "1"){
-        sys.regis();
+        sys.regis();        // Calls registration function
     }
     else if (choice == "2"){
-        sys.login();
-        if (sys.status == 1){
-            while(sys.cmenu == 1){
-            sys.display_cmenu();
-            sys.customer_choice();
-            }
-            sys.cmenu = 1;
+        sys.login();        // Calls Login function
+        while(sys.cmenu == 1){
+            sys.display_cmenu();        
+            sys.customer_choice();      // Initiates customer menu upon successful login
         }
     }
     else if (choice == "3"){
-        sys.del();
+        sys.del();          // Calls delete account function
     }
     else if (choice == "4"){
         cout << "Thank you!" << endl;
-        exit = 1;
+        exit = 1;           // To break loop at main()
     }
     else{
         cout << "Invalid option, please try again!" << endl;
