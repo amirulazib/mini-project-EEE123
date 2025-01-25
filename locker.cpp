@@ -1,6 +1,6 @@
-// Coder        : 
-// Matrix no.   : 
-// Function     : 
+// Coder        : CHEAH CHEE KANG//
+// Matrix no.   : 23302124//
+// Function     : ABBLE TO USE THIS .CPP FOR RENT LOCKERS AND PRINT OUT THE TOTAL PRICE OF LOCKERS//
 
 #include "header.hpp"
 
