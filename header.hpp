@@ -12,6 +12,7 @@
 #include <vector>
 #include <iomanip>
 #include <conio.h>
+#include <limits>
 
 using namespace std;
 
