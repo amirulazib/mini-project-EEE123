@@ -1,9 +1,8 @@
-// Coder        : 
-// Matrix no.   : 
-// Function     : 
+// Coder        : Sew Heng Hou
+// Matrix no.   : 23302118
+// Function     : Display main menu choices
 
 #include "header.hpp"
-
 
 void tsystem::display_mmenu(){
     cout << endl;
