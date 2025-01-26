@@ -59,11 +59,14 @@ void tsystem::getOrder(const FoodItem foodList[], int count, Order orderList[], 
                 cout << "Quantity: ";
                 cin >> quantity;
 
-                if (cin.fail() || quantity <= 0) {
-                    cout << "\nInvalid input. Enter positive integer."<< endl;
-                    cin.clear();
-                    cin.ignore();
+                while (cin.fail() || quantity <= 0) {
+                    cout << "\nInvalid input. Enter a positive integer." << endl;
+                    cin.clear(); // Clear the error flag
+                    cin.ignore(numeric_limits<streamsize>::max(), '\n'); // Ignore invalid input in the buffer
+                    cout << "Quantity: ";
+                    cin >> quantity;
                 }
+
                 
                 orderList[j].quantity += quantity;
                 totalPrice += foodList[j].price * quantity; 
@@ -80,11 +83,14 @@ void tsystem::getOrder(const FoodItem foodList[], int count, Order orderList[], 
                     cout << "Quantity: ";
                     cin >> quantity;
 
-                    if (cin.fail() || quantity <= 0) {
-                    cout << "\nInvalid input! Expected an integer."<< endl;
-                    cin.clear();
-                    cin.ignore();
+                    while (cin.fail() || quantity <= 0) {
+                        cout << "\nInvalid input. Enter a positive integer." << endl;
+                        cin.clear(); // Clear the error flag
+                        cin.ignore(numeric_limits<streamsize>::max(), '\n'); // Ignore invalid input in the buffer
+                        cout << "Quantity: ";
+                        cin >> quantity;
                     }
+
 
                     orderList[orderCount].code = foodList[i].code;
                     orderList[orderCount].name = foodList[i].name;

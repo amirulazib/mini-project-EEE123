@@ -1,6 +1,6 @@
-// Coder        : 
-// Matrix no.   : 
-// Function     : 
+// Coder        : Sew Heng Hou
+// Matrix no.   : 23302118
+// Function     : Contains the class for the system
 
 #pragma once
 
@@ -12,15 +12,15 @@
 #include <vector>
 #include <iomanip>
 #include <conio.h>
+#include <limits>
 
 using namespace std;
 
 const int ITEMS = 30;
 
-
-
 class tsystem {
     public:
+        // Main menu section
         void display_mmenu();
 
         void mainmenu_choice();
@@ -37,6 +37,7 @@ class tsystem {
         void checkexist(string,string);
         int exist = 0;
 
+        // Customer menu section
         void display_cmenu();
 
         void customer_choice();

@@ -1,10 +1,8 @@
-// Coder        : 
-// Matrix no.   : 
-// Function     : 
+// Coder        : Sew Heng Hou
+// Matrix no.   : 23302118
+// Function     : To delete registered accounts
 
 #include "header.hpp"
-
-// Used Chatgpt for this cuz its complicated :)
 
 void tsystem::del() {
     ifstream input;
