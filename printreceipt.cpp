@@ -1,6 +1,6 @@
-// Coder        : 
-// Matrix no.   : 
-// Function     : 
+// Coder        : WAN YAZAFRIANA BINTI WAN YAZAIRI 
+// Matrix no.   : 23303506
+// Function     : To print a receipt after checking purchases
 
 #include "header.hpp"
 
