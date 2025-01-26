@@ -1,6 +1,6 @@
-// Coder        : 
-// Matrix no.   : 
-// Function     : 
+// Coder        : LIMUZI
+// Matrix no.   : 23300188
+// Function     : Check what customers are buying
 
 #include "header.hpp"
 
@@ -16,10 +16,10 @@ void tsystem::checkpurchases(){
     
     string line;
     while (getline(final, line)) {
-        if (line.find("tickets:") == 0) {
-            string tickets = line.substr(8);
+        if (line.find("tickets:") == 0) {             // Finds ticket data from "username_data.txt"
+            string tickets = line.substr(8); // Extract ticket data
             int adult_ticket, children_ticket, senior_ticket;
-            sscanf(tickets.c_str(), "%d,%d,%d", &adult_ticket, &children_ticket, &senior_ticket);
+            sscanf(tickets.c_str(), "%d,%d,%d", &adult_ticket, &children_ticket, &senior_ticket); 
             cout << "\nTickets Bought:\n";
             if (adult_ticket > 0){
                 cout << "  Adult: " << adult_ticket << "\n";
@@ -35,8 +35,8 @@ void tsystem::checkpurchases(){
             }
         }
 
-        else if (line.find("locker:") == 0) {
-            string lockers = line.substr(7);
+        else if (line.find("locker:") == 0) {        // Finds locker data from "username_data.txt"
+            string lockers = line.substr(7); // Extract locker data
             int locker_amount;
             sscanf(lockers.c_str(), "%d", &locker_amount);
             cout << "\nLocker rented: ";
@@ -48,7 +48,7 @@ void tsystem::checkpurchases(){
             }
         }
 
-        else if (line.find("order:") == 0) {
+        else if (line.find("order:") == 0) {        // Finds food data from "username_data.txt"
             string order = line.substr(6); // Extract order data
             stringstream ss(order);
             string quantity_str, food_name, price_str;
