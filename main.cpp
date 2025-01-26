@@ -7,12 +7,9 @@
 //               5. NUR AMIRUL AZIB BIN NAZRI           (22306893)
 //               6. LIMUZI                              (23300188)
 //
-//Project Description: 
-//
-//
-//
-//
-//
+//Project Description:  The program helps visitors register and log into their accounts to buy tickets, 
+//                      rent storage lockers and buy food. The special thing is that visitors can check 
+//                      their purchases and get electronic invoices
 //
 //==============================================================================================================================================//
 
