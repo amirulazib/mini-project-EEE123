@@ -1,6 +1,6 @@
-// Coder        : 
-// Matrix no.   : 
-// Function     : 
+// Coder        : Sew Heng Hou
+// Matrix no.   : 23302118
+// Function     : Displays customer menu choices
 
 #include "header.hpp"
 
