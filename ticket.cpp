@@ -22,10 +22,10 @@ void tsystem::ticket(){
             cin >> tic_choice;
 
             if (tic_choice < 1 || tic_choice > 3){
-            cout << "Invalid selection. Please try again." << endl;
+            cout << "Invalid selection. Please try again." << endl;  //The choices is not from 1 to 3
             }
             else{
-            break;
+            break;  //Ends the loop
             }
         }
         while(true){
@@ -41,22 +41,22 @@ void tsystem::ticket(){
         cout << "\nYou have selected " << numTickets << " tickets for ";
         switch (tic_choice) {
             case 1:
-                cout << "Adult." << endl;
+                cout << "Adult." << endl; //Choice1
                 adult_count = numTickets;
                 break;
             case 2:
-                cout << "Children." << endl;
+                cout << "Children." << endl; //Choice2
                 children_count = numTickets;
                 break;
             case 3:
-                cout << "Senior." << endl;
+                cout << "Senior." << endl; //Choice3
                 senior_count = numTickets;
                 break;
             }
             break;
             }
         }
-        
+        //Store the data into txt.file
         tsystem::ticket1 = adult_count;
         tsystem::ticket2 = children_count;
         tsystem::ticket3 = senior_count;
@@ -86,13 +86,13 @@ void tsystem::ticket(){
         cin >> choice;
 
         if (choice == "Y" || choice == "y" ) {
-        break;
+        break; //End the loop and return to the ticket menu
         } else if (choice == "N" || choice == "n") {
         int price = 0;
-        price += 20 * (adult_count) + 10 * (children_count) + 15 * (senior_count);
+        price += 20 * (adult_count) + 10 * (children_count) + 15 * (senior_count); //Calculate the prices
         cout << "The price is RM " << price << endl;
         cout << "\nReturning to the home page. Thank you!" << endl;
-        return;
+        return; //Return to customer menu
         } else {
         cout << "Invalid input. Please try again." << endl;
         }
